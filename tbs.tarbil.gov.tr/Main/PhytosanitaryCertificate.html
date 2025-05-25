@@ -15,27 +15,39 @@
 
     <style>
     @media (max-width: 600px) {
-        #pdfGostermeAlani {
-            width: 100vw !important;
-            overflow: hidden;
-        }
-        #pdfEmbed {
-            width: 100vw !important;
-            height: 80vh !important;
-            min-width: 0 !important;
-            min-height: 0 !important;
-            max-width: 100vw !important;
-            max-height: 80vh !important;
-            border: none !important;
-            display: block;
-            margin: 0 auto;
-            padding: 0;
-            /* Shrink to fit */
-            zoom: 0.5;
-            -webkit-transform: scale(0.5);
-            -webkit-transform-origin: 0 0;
-        }
+    html, body {
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        background: #fff !important;
     }
+    #ortaAlan, #pdfGostermeAlani {
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        background: #fff !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+    }
+    #pdfEmbed {
+        width: 100vw !important;
+        height: 100vh !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        border: none !important;
+        display: block;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        background: #fff !important;
+    }
+}
         .loader {
             top: 0;
             left: 0;
