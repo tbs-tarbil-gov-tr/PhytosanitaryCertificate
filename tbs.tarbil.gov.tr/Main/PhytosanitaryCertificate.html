@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<!-- Mirrored from tbs.tarbil.gov.tr/Main/PhytosanitaryCertificate by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 May 2025 12:33:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="T.C. Tarım ve Orman Bakanlığı">
+    <title>Phytosanitary Certificate - T.C. Tarım ve Orman Bakanlığı</title>
+    <link href="https://tbs.tarbil.gov.tr/Content/css?v=Vy-V1cMGIEIu27JLSwvBpbrRkZgYOpZWVn4xc9NZzOg1" rel="stylesheet"/>
+
+    <script src="https://tbs.tarbil.gov.tr/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+
+    <style>
+        .loader {
+            top: 0;
+            left: 0;
+            position: fixed;
+            opacity: 0.8;
+            z-index: 10000000;
+            /*background: Black;*/
+            background: none;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+
+        .strip-holder {
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            left: 50%;
+            margin-left: -50px;
+            position: relative;
+        }
+    </style>
+
+</head>
+<body oncontextmenu="return false;">
+    <div id="ortaAlan">
+        
+
+
+
+<style>
+    .yazdirilirken {
+        padding-left: 60px;
+        font-size: 18px;
+        font-family: Arial;
+    }
+
+    .yazdirilirkenFullPadding {
+        padding-left: 80px;
+        padding-right: 80px;
+        font-size: 16px;
+        font-family: Arial;
+    }
+
+    .LogoveYaziAlanlari {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div id="fontid" class="container">
+
+    <div class="LogoveYaziAlanlari">
+        <div>
+            <a href="Main.html" style="" class="imgAnaSayfa">
+                <img src="../Images/trFlag.png" style="height: auto; width: 130px;" alt="Diğer İşlemler'e Dön">
+            </a>
+        </div>
+        <div style=" text-align: center;">
+            <h4><b>TÜRKİYE CUMHURİYETİ</b></h4>
+            <h5>TARIM VE ORMAN BAKANLIĞI</h5>
+            <h4><b>REPUBLIC OF TÜRKİYE</b></h4>
+            <h5>MINISTRY OF AGRICULTURE AND FORESTRY</h5>
+        </div>
+        <div>
+            <a href="Main.html" style="background-color: white; border-radius: 2px;" class="imgAnaSayfa">
+                <img src="../Images/logo.png" style="width: 100px; height: auto;" alt="Diğer İşlemler'e Dön">
+            </a>
+        </div>
+    </div>
+
+    <section class="card card-admin" style="box-shadow:#2f2f2f 0px 0px 15px; margin-top:20px; margin-bottom:20px;">
+        <div class="card card-default">
+            <div class="card-header" style="background-color: #3f7889; color: white; ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <center><h4 class="card-title m-0" style="margin-top:15px; margin-bottom:15px;"><b>Verify of Phytosanitary Certificate (PC) | BSS Doğrula</b></h4></center>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+
+
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10" style="margin-top:20px; margin-bottom:20px;">
+                        <input type="hidden" name="urldenGelenKode" id="urldenGelenKode" />
+
+                        <div class="row" style="padding-left:50px;">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="type">
+                                        PC (BSS) Type(*)
+                                    </label>
+                                    <select class="form-control" id="type">
+                                        <option value="0">Sertifika Türünü Seçiniz!</option>
+                                        <option value="1">A</option>
+                                        <option value="2">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="bssno">
+                                        PC (BSS) No: EC/TR(*)
+                                    </label>
+                                    <input class="form-control" type="text" name="bssno" id="bssno" maxlength="7" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="barkodCode">
+                                        Barkod Numarası
+                                    </label>
+                                    <input class="form-control" type="text" name="barkodCode" id="barkodCode" maxlength="6" value="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="padding-right: 25px; display: flex; flex-direction: column; flex-wrap: wrap; align-content: flex-end; justify-content: center; align-items: center;">
+                            <button id="btnAra" name="btnAra" class="btn" onclick="Search();" style=" background-color: #355E5F; color: white; font-size: small; font-weight: bold; float: right;">
+                                Search | Sorgula
+                            </button>
+                            <p id="sorgulamaTarihiButonunAlti"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+<div id="SorgulamaSonucuAlani">
+
+    <div id="SorgulamaBilgisiVeTarihiAlani" style="display:none; padding-left: 70px; padding-top: 70px; background-color: white; font-family: math; font-size: 18px;">
+        <div class="card-header" style="background-color: #3f7889; color: white; ">
+            <div class="row">
+                <div class="col-md-12">
+                    <center><h4 class="card-title m-0" style="margin-top:15px; margin-bottom:15px;"><b>Verify of Phytosanitary Certificate (PC) | BSS Doğrula</b></h4></center>
+                </div>
+            </div>
+        </div>
+
+        <p id="sorgulamaTarihi"></p>
+        <p id="sorgulamaTipi"></p>
+        <p id="sorgulamaBss"></p>
+        <p id="sorgulamaBarcod"></p>
+    </div>
+
+    <div id="error-container" class="alert alert-danger container" style="display: none; padding-left: 50px; font-size: medium; font-weight: bolder; font-variant-caps: all-petite-caps;"></div>
+
+    <div id="BelgeDurumuSonucAlani" class="container" style="display: none; background-color: rgb(63 120 137 / 10%) !important; ">
+        <div id="belgeDurumuRenkAlani" style="width: 40px; height: 40px; float: left;margin-right: 12px;"></div>
+        <div id="belgeDurumuAciklamaAlani" style="margin: 10px; font-size: medium; font-weight: bolder; font-variant-caps: all-petite-caps; "></div>
+    </div>
+
+    <div id="BeyannameNumarasiAlani" class="container" style="display: none; background-color: rgb(63 120 137 / 10%) !important; padding-left:58px;">
+        <div id="BeyannameNumarasi" style="margin: 10px; font-size: medium; font-weight: bolder; font-variant-caps: all-petite-caps; "></div>
+    </div>
+
+    <div id="BelgeSatirlariAlani" class="container" style="display: none; margin-top: 10px; margin-bottom: 10px;">
+        <div class="table-responsive" style="background-color: white;">
+            <table id="BelgeSatirlariTablosu" class="table table-striped table-bordered" style="margin-bottom:0px !important;">
+                <thead style="background-color: cadetblue; color: white;">
+                    <tr>
+                        <th scope="col">Ürün Adı</th>
+                        <th scope="col">Miktar</th>
+                        <th scope="col">Gerçekleşen Miktar</th>
+                        <th scope="col">Birim</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container" id="trafficLamp">
+        <div class="row col-md-12">
+            <div>
+                <h5 style="font-weight: 570; font-family: Arial;">
+                    Phytosanitary Certificates are verified in two stages.
+                </h5>
+                <h5 style="font-size: 14px; font-family: Arial;">
+                    In Stage 1, it is verified that the Phytosanitary Certificate is issued by the National Plant Protection Organisation of Türkiye.<br />
+                    In the 2nd stage, if the product is fresh fruit and vegetables, the exit status from the Customs Territory of Türkiye is checked.<br />
+                    As a result of all these checks, detailed information about the status of the Phytosanitary Certificate to be verified is given as follows.
+                </h5>
+                <div class="col-md-2">
+                    <img src="../Images/trafik.png" style="width: 130px; height: 220px; margin-top:10px;"/>
+                </div>
+                <div class="col-md-10">
+                    <h5 class="alert alert-danger" role="alert" style="font-size: 14px; font-family: Arial; ">
+                        No such Phytosanitary Certificate has been issued by the Turkish National Plant Protection Service.
+                    </h5>
+                    <h5 class="alert alert-warning" role="alert" style="font-size: 14px; font-family: Arial; ">
+                        The Phytosanitary Certificate has been issued by the Türkiye National Plant Protection Service.<br />
+                        The Product Did Not Exited From Türkiye.
+                    </h5>
+                    <h5 class="alert alert-success" role="alert" style="font-size: 14px; font-family: Arial; ">
+                        The Phytosanitary Certificate has been issued by the Türkiye National Plant Protection Service.<br />
+                        <ul>
+                            <li>The Product Exited From Türkiye.</li>
+                            <li>The products indicated as "Export Realised Quantity" in the table below were exported from Türkiye.</li>
+                        </ul>
+                    </h5>
+                </div>
+                <h5 style="font-size: 14px; font-family: Arial;">
+                    Phytosanitary Certificate and Re-Export Phytosanitary Certificates can be verified with QR code. The QR code is located in 2nd place of the Phytosanitary Certificate.The Verification Result is shown in the section above the Phytosanitary Certificate. In addition, Certificates continue to be issued with wet signature and seal.<br />
+                    If you require additional information or have any questions about the Phytosanitary Certificate, please don't hesitate to contact us on <a class="link-opacity-75">nppoturkiye@tarimorman.gov.tr</a>
+                </h5>    
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="SayfaIndirmeAlani" style="display: none; justify-content: flex-end; align-content: center; align-items: center; flex-wrap: wrap; flex-direction: row; width: 99vw !important; ">
+    <button onclick="sayfayiYazdir()" class="btn btn-primary">Sorgulama Bilgilerini Yazdır</button>
+</div>
+
+<div id="pdfGostermeAlani" style="display:none;">
+    <embed id="pdfEmbed" type="application/pdf" width="100%" height="800px" />
+</div>
+
+
+<script src="../Content/html2pdf.bundle.min.js"></script>
+
+<script>
+
+    function alanDoluMu(metin) {
+        return (metin && metin.trim() !== "");
+    }
+
+    function clearAreas() {
+
+        $("#sorgulamaTarihiButonunAlti").html();
+        $("#sorgulamaTarihi").html();
+        $("#error-container").html("").hide();
+        $("#pdfGostermeAlani").hide();
+
+        $("#BelgeDurumuSonucAlani").hide();
+        $("#BeyannameNumarasiAlani").hide();
+
+        $("#BelgeSatirlariAlani").hide();
+
+        $("#belgeDurumuAciklamaAlani").html('');
+        $("#BeyannameNumarasi").html('');
+
+        $("#trafficLamp").show();
+    }
+
+    function Search() {
+    clearAreas();
+    $("#trafficLamp").hide();
+
+    var type = $("#type").val();
+    var bssno = $("#bssno").val();
+    var barkodCode = $("#barkodCode").val();
+
+    if ($.trim(bssno) === "") {
+        $("#error-container").html("Bitki Sağlığı Sertifikası Numarasını Giriniz! - Enter the Phytosanitary Certificate Number!").show();
+        return;
+    }
+
+    if ($.trim(barkodCode) === "") {
+        $("#error-container").html("Barkod Numarasını Giriniz! - Enter the Barcode Number!").show();
+        return;
+    }
+
+    if (type == "0") {
+        $("#error-container").html("Sertifika Türünü Seçiniz! - Choose Certificate Type!").show();
+        return;
+    }
+
+    // Only show the PDF if all values match
+    if (
+        type === "2" && // "B" type is value "2"
+        bssno === "0571662" &&
+        barkodCode === "592870"
+    ) {
+        var pdfUrl = "../pdfs/download.pdf";
+        $("#pdfGostermeAlani").show();
+        $("#pdfEmbed").attr("src", pdfUrl);
+    } else {
+        $("#error-container").html("Belge bulunamadı veya bilgiler hatalı.").show();
+        $("#pdfGostermeAlani").hide();
+        $("#pdfEmbed").attr("src", "");
+    }
+}
+
+    function sayfayiYazdir() {
+        var type = $("#type").val();
+        var bssno = $("#bssno").val();
+        var barkodCode = $("#barkodCode").val();
+
+        if ($.trim(bssno) === "") {
+            return;
+        }
+
+        if (type == "0") {
+            return;
+        }
+
+        $("#sorgulamaTarihi").html($("#sorgulamaTarihiButonunAlti").html());
+
+        if (type == "1") {
+            $("#sorgulamaTipi").html("PC (BSS) Type: A");
+        }
+        else if (type == "2") {
+            $("#sorgulamaTipi").html("PC (BSS) Type: B");
+        } else {
+            $("#sorgulamaTipi").html("PC (BSS) Type: ");
+        }
+
+        $("#sorgulamaBss").html("PC (BSS) No: " + bssno);
+        $("#sorgulamaBarcod").html("Barkod Numarası: " + barkodCode);
+
+        $("#SorgulamaBilgisiVeTarihiAlani").show();
+        $("#SorgulamaSonucuAlani").addClass("yazdirilirken");
+        $("#BelgeSatirlariAlani").addClass("yazdirilirkenFullPadding");
+
+        var element = $("#SorgulamaSonucuAlani").html();
+
+        $("#SorgulamaSonucuAlani").removeClass("yazdirilirken");
+        $("#BelgeSatirlariAlani").removeClass("yazdirilirkenFullPadding");
+        $("#SorgulamaBilgisiVeTarihiAlani").hide();
+
+        var dosyaAdi = "Bitki Sağlığı Sertifikası - " + $("#sorgulamaTarihiButonunAlti").html().replaceAll(":",";")+".pdf";
+
+        html2pdf(element, {
+            margin: 2, // Sayfa kenar boşlukları (px)
+            filename: dosyaAdi, // PDF dosya adı
+            image: { type: 'jpeg', quality: 0.98 }, // Resim kalitesi ve türü
+            html2canvas: { scale: 2 }, // html2canvas özellikleri
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' } // jsPDF özellikleri
+        });
+    }
+
+</script>
+        <hr />
+
+        <footer oncontextmenu="return false;">
+            <p class="text-center">
+                2025 © T.C. TARIM VE ORMAN BAKANLIĞI
+            </p>
+            <p class="text-center">
+                Sunucu: TBSPORTAL01
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://tbs.tarbil.gov.tr/bundles/jquery?v=2u0aRenDpYxArEyILB59ETSCA2cfQkSMlxb6jbMBqf81"></script>
+
+    <script src="https://tbs.tarbil.gov.tr/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+    
+</body>
+
+
+<!-- Mirrored from tbs.tarbil.gov.tr/Main/PhytosanitaryCertificate by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 May 2025 12:33:08 GMT -->
+</html>
