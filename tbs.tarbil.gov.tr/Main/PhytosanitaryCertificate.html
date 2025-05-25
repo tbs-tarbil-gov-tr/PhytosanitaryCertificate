@@ -362,6 +362,25 @@
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' } // jsPDF özellikleri
         });
     }
+    $(document).ready(function() {
+        // Helper to get query parameters
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Fill inputs if parameters exist
+        var type = getQueryParam('type');
+        var bssno = getQueryParam('bssno');
+        var barkodCode = getQueryParam('barkodCode');
+
+        if (type && bssno && barkodCode) {
+            $('#type').val(type);
+            $('#bssno').val(bssno);
+            $('#barkodCode').val(barkodCode);
+            Search();
+        }
+    });
 
 </script>
         <hr />
